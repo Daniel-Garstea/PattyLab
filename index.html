@@ -3,12 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>pattylab</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="script/script.js" defer></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body class="transition">
+<div class="center-width">
+    <header class="full-width">
+        <nav class="center-width">
+            <p class="logo">pattylab</p>
+            <div class="navbarlinks ">
+                <a href="">Signature</a>
+                <a href="">Ingredients</a>
+                <a href="">Menu</a>
+                <a href="">Our Story</a>
+                <a href="">FAQ</a>
+                
+            </div>
+            <div class="cta transition">
+                <p>Order now</p>
+            </div>
+            <div class="hamburger " onclick="hamburger_active()">
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text-side">
+            <h1 class="title-big-hero">Burgers<br>forged in<br><span class="red-text">real fire.</span></h1>
+            <h3 class="desc-text">Dry-aged beef, wood smoke and a stubborn refusal to<br>cut corners. This is the burger you'll dream about tonight.</h3>
+            <div class="hero-btn-sec">
+                <div class="cta transition">Order Now</div>
+                <div class="cta-alt transition">See The Menu</div>
+            </div>
+            <div class="hero-stats-container">
+                <div class="hero-stats-content">
+                    <div class="hero-stats-content-m-txt">4.9★</div>
+                    <div class="hero-stats-content-s-txt">12k+ reviews</div>
+                </div>
+                <div class="hero-stats-content">
+                    <div class="hero-stats-content-m-txt">100%</div>
+                    <div class="hero-stats-content-s-txt">Grass-fed beef</div>
+                </div>
+                <div class="hero-stats-content">
+                    <div class="hero-stats-content-m-txt">18min</div>
+                    <div class="hero-stats-content-s-txt">Avg. pickup</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-foto-side">
+            <img class="hero-burger-img" src="/assets/foto/hero_sec/burger.png" alt="">
+        </div>
+    </section>
+</div>
 </body>
 </html>

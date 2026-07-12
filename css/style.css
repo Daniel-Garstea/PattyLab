@@ -1,0 +1,215 @@
+:root{
+    --unbounded: "Unbounded", sans-serif;
+    --monrope: "Manrope", sans-serif;
+    --fraunces: "Fraunces", serif;
+    --red-color: #E4341C;
+    --dark-brown-color: #241109;
+    --beige: #FBF2E1;
+    --milkey-beige: #f4cfb7;
+    --hero-big-font-size:clamp(4rem, 7vw, 7rem);
+    --large-font-size: clamp(3.5rem, 9vw, 8rem);
+    --title-font-size: clamp(3rem, 6vw, 6rem);
+    --cta-font-size: clamp(1rem, 2vw, 1.3rem);
+    --desc-font-size:clamp(1rem, 2vw, 1.2rem);
+    --width-page: min(90%, 1280px);
+    --margin-inline-page: auto;
+    --transition: all 0.3s ease-in-out;
+}
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+body{
+    background-color: var(--beige);
+    color: var(--dark-brown-color);
+    font-family: var(--unbounded);
+    overflow-x: hidden;
+}
+.transition{
+    transition: var(--transition);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.center-width{
+    width: var(--width-page);
+    margin-inline: auto;
+}
+.full-width {
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+}
+.red-text{
+    color: var(--red-color);
+}
+header{
+    margin-top: 18px;
+    background-color: var(--beige);
+    color: var(--dark-brown-color);
+}
+.logo{
+    font-family: var(--unbounded);
+    font-size: var(--desc-font-size);
+    font-weight: 900;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+    justify-content: center;
+}
+.navbarlinks{
+    font-family: var(--monrope);
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    font-weight: bold;
+    align-items: center;
+}
+.navbarlinks>a{
+    transition: var(--transition);
+}
+.navbarlinks>a:hover{
+    color: var(--red-color);
+}
+.cta{
+    font-weight: bold !important;
+    font-size: var(--cta-font-size) !important;
+    padding: 10px 20px;
+    background-color: var(--red-color);
+    border-radius: 50px;
+    color: var(--beige);
+    border: var(--red-color) solid 3px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: flex-start;
+}
+.cta:hover{
+    color: var(--red-color);
+    background-color: var(--beige);
+}
+.cta-alt{
+    font-weight: bold !important;
+    font-size: var(--cta-font-size) !important;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 50px;
+    color: var(--dark-brown-color);
+    border: var(--dark-brown-color) solid 3px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: flex-start;
+}
+.cta-alt:hover{
+    color: var(--beige);
+    background-color: var(--dark-brown-color);
+}
+.hamburger{
+    display: none;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.hamburger>div{
+    border-radius: 4px;
+    width: 30px;
+    height: 4px;
+    background-color: var(--red-color);
+}
+.title-big-hero{
+    font-size: var(--hero-big-font-size);
+}
+.desc-text{
+    font-family: var(--monrope);
+    font-weight: 700;
+    font-size: var(--desc-font-size);
+}
+.hero{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    min-height: 100vh;
+}
+.hero-text-side{
+    width: 50%;
+}
+.hero-btn-sec{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 20px;
+
+}
+.hero-stats-container{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 20px;
+}
+.hero-stats-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hero-stats-content-m-txt{
+    font-size: var(--cta-font-size);
+    font-weight: 900;
+}
+.hero-burger-img{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+    .hamburger{
+        display: flex;
+    }
+    .navbarlinks{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100svh;
+        background-color: #8c6a5c;
+        width: 100%;
+    }
+
+    
+}
